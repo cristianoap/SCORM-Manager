@@ -6,19 +6,19 @@ Manage SCORM_API_Wrapper and allow to control course workflow
 O arquivo Manager.min.js é o responsável por gerar a interatividade da interface do curso, e este arquivo se comunica com o SCORM_API para conduzir ao salvamento de dados em tempo real via Ajax. Abaixo deixo listado os parâmetros de configuração que podem ser utilizados antes do comando Manager.Core.begin():
 
 
-Settings = {
-	debug: 'error',
-	min_time_per_page: 0,
-	resume_prompt: true,
-	protect_images: true,
-	limit_video_access: true,
-	pages_dir: 'html/',
-	lang: '',
-	straight: true,
-	score_by_progress: false,
-	score_max: 100,
-	score_min: 0,
-}
+	Settings = {
+		debug: 'error',
+		min_time_per_page: 0,
+		resume_prompt: true,
+		protect_images: true,
+		limit_video_access: true,
+		pages_dir: 'html/',
+		lang: '',
+		straight: true,
+		score_by_progress: false,
+		score_max: 100,
+		score_min: 0,
+	}
 
 
 debug: Configura a exibição de informações de debug no console do navegador. Os valores são none, error, log, all.
