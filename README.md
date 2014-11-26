@@ -43,6 +43,8 @@ score_max: Pontuação máxima possível para este curso.
 
 score_min: Pontuação mínima possível para este curso.
 
+Ganchos
+=============
 
 A priori não é necessário editar o arquivo Manager.min.js, bastando utilizar ganchos existentes no código conforme tabela abaixo:
 
