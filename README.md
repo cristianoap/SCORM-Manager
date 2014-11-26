@@ -100,4 +100,4 @@ after_protect_video: Executa após vídeo ser protegido;
 
 on_play_video: Executa ao clicar no comando watch_video;
 
-English traslation coming soon.
+**English traslation coming soon.**
