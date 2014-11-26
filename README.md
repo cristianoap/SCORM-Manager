@@ -22,9 +22,13 @@ O arquivo Manager.min.js é o responsável por gerar a interatividade da interfa
 
 
 debug: Configura a exibição de informações de debug no console do navegador. Os valores são none, error, log, all.
+
 min_time_per_page: Permite impedir o avanço antes que o tempo mínimo seja atingido. Caso a página já tenha sido visto antes está configuração não será aplicada.
+
 resume_prompt: Caso configurado como TRUE, permite que o aluno ao acessar a aula escolha se deseja começar onde parou ou ir a primeira tela do curso.
+
 protect_images: Permite bloquear o clique direito e comandos de arrastar.
+
 limit_video_access: Permite impedir a visualização de vídeos após X visualizações (visualizações durante a mesma sessão são ignoradas). A contagem dos vídeos é individual, e a contagem será incrementada após confirmação do aluno.
 pages_dir: Pasta contendo arquivos html de cada item no menu.
 lang: Permite internacionalizar o curso. Uma pasta dentro da pasta html deverá ser criada com o idioma selecionado nesta configuração (por exemplo html/pt_BR/aula1.html). O arquivo contendo o menu do curso deverá ser nomeado conforme a convenção menu_pt_BR.xml.
