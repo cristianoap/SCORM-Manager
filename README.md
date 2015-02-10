@@ -133,11 +133,11 @@ limit_video_access: Prevent viewing videos after X views (views during the same 
 
 pages_dir: Folder containing html files for each menu item.
 
-lang: Allows internationalize the course. A folder within the html folder should be created with the language selected in this configuration (eg html / en_US / aula1.html). The file containing the course of the menu should be appointed as the menu_pt_BR.xml Convention.
+lang: Allows internationalize the course. A folder within the html folder should be created with the language selected in this configuration (eg html/en_US/introduction.html). The file containing the course of the menu should be appointed as the menu_pt_BR.xml Convention.
 
 straight: If set to TRUE, prevents the student to jump course pages.
 
-score_by_progress: Allows scoring the student based on the percentage of progress even in the course. If other scoring metrics are used, this option can remain FALSE. The value of the student's score will be within the score_min and score_max limits.
+score_by_progress: Allows scoring the student based on the percentage of progress even in the course. If other scoring metrics are used, this option can remain FALSE. The value of the student's score should be between the score_min and score_max.
 
 score_max: Maximum possible score for this course.
 
