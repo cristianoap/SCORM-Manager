@@ -100,7 +100,8 @@ after_protect_video: Executa após vídeo ser protegido;
 
 on_play_video: Executa ao clicar no comando watch_video;
 
-**English traslation coming soon.**
+English description
+============================
 
 The Manager.min.js file is responsible for generating the interactivity of the course interface, and this file communicates with the SCORM_API to drive the transmission of real-time data via Ajax. Below you will find the configuration parameters that can be used before the Manager.Core.begin () command:
 
