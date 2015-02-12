@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Scorm Manager</title>
+	<link href="css/layout.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/text.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/custom-theme/jquery-ui-1.10.0.custom.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="js/SCORM_API_wrapper.js" language="javascript" type="text/javascript"></script>
+	<script src="js/Manager.js"></script>
+	<script src="js/jquery.highlight.js"></script>
+	<script src="js/jQuery.stringify.js"></script>
+	<script src="js/jquery.jfontsize-1.0.min.js"></script>
+	<script src="js/actions.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+		Manager.Settings.debug = 'all';
+		Manager.Settings.lang = 'pt_BR';
+		Manager.Core.begin(teste);
+	});
+	</script>
+</head>
+
+<body>
+	<div id="pagina">
+		<div id="cabecalho">
+			<div id="menuPrinc">
+				<div id="parte1">
+					<div id="combo">	<span id="sessao"></span>
+						<!--<a href="#" title="Navegar" id="comboBt">Navegar</a>-->
+						<div id="tree">
+							<div id="menu-tree"></div>
+						</div>
+					</div>
+				</div>
+				<!---fim combo --->
+				<div id="parte2">
+					<div id="part2a">
+						<div id="voltarCorpo">	<a href="#" name="voltar" title="Anterior" id="voltar">Anterior</a>
+						</div>
+					</div>
+					<div id="part2b">	<span id="porcento"></span>
+						<span id="quantidade"></span>
+					</div>
+					<div id="part2c">
+						<div id="avancarCorpo">	<a href="#" name="avancar" title="Próximo" id="avancar">Próximo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---fim menuPrinc --->
+			<div id="barraTitulo">
+				<div id="rodape2"></div>
+			</div>
+			<div id="navegacaoTexto">
+				<div id="rodape">
+					<div id='busca'></div>
+				</div>
+				<div id="tamanhotexto">	<span>Tamanho do Texto:</span>
+					<a class="jfontsize-button" id="jfontsize-m" href="#">A-</a>&nbsp;	<a class="jfontsize-button" id="jfontsize-d" href="#">A</a>&nbsp;	<a class="jfontsize-button"
+					id="jfontsize-p" href="#">A+</a>
+				</div>
+			</div>
+		</div>
+		<div id="dialog" title="Mensagem">
+		</div>
+		<!---fim cabecalho --->
+		<div id="conteudo">
+			<!--conteudo-->
+		</div>
+		<!---fim conteudo --->
+	</div>
+	<!---fim pagina --->
+</body>
+
+</html>

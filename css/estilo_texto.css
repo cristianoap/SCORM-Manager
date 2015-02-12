@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#cxprincp{
+background-color: #FFF;
+	overflow: auto;
+	height:420px;
+	margin-top:15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.875em;
+	text-transform: none;
+	text-align:justify;
+}
+
+#cxprincp div{
+	clear:both;
+}
+.corpo_tx{
+	padding: 10px;
+	height: 480px;
+}
+
+.titulo_conteudo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.000em;
+	font-weight: bold;
+	color: #900;
+	text-indent: 30px;
+	line-height: 100%;
+}
+.texto_padrao {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.000em;
+	line-height: 140%;
+	text-align: justify;
+	text-indent: 30px;
+}
+
+
+
+.texto_padraomenor {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	line-height: 140%;
+	text-align: justify;
+	text-indent: 30px;
+}
+#box {
+
+background-color:#CCC;
+border:2px solid #039;
+padding: 10px;
+width:700px;
+height:100px;
+
+}
+.texto_pad2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.000em;
+	line-height: 140%;
+	text-align: justify;
+}
+
+
+
+
+ul{list-style:none; padding-left:10px;}
+.li_1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.000em;
+	line-height: 140%;
+	list-style-position: inside;
+	text-align: justify;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	list-style-type: disc;
+}
+
+
+
+
+.li_2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.000em;
+	line-height: 140%;
+	list-style-position: inside;
+	list-style-image:  url(../imagem/li_2.png);
+	text-align: justify;
+}
+
+.li_3 {
+	margin: .5em 0 .5em 0;
+	line-height: 140%;
+	font-size:1.000em;
+	list-style-position: inside;
+	list-style-image: url(../imagem/li_1.png);
+	text-indent: 0px;
+	text-align: justify;
+}
+.li_4 {
+	margin: .5em 0 .5em 0;
+	line-height: 140%;
+	list-style-position: inside;
+	list-style-image: url(../imagens_curso/topico_red.gif);
+}
+
+
+
+
+.cabtitulo {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.200em;
+	ext-transform: none;
+	font-weight: bold;
+	color: #990000;
+	width: 96%;
+	margin-right: 3%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #900;
+	margin-left: 1%;
+}
+.cabtitulo2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.125em;
+	text-transform: none;
+	font-weight: bold;
+	color: #333333;
+	margin-left: 30px;
+	margin-top: 0px;
+
+}
+.cabtitulo3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.000em;
+	text-transform: none;
+	font-weight: bold;
+	color: #666;
+	margin-left: 30px;
+	margin-top: 0px;
+}
+
+
+.cabtitulo3a {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.000em;
+	text-transform: none;
+	font-weight: bold;
+	color: #666;
+	margin-left: 30px;
+	margin-top: 0px;
+	margin-right: 3%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #900;
+	margin-left: 1%;
+}	
+.cabtitulo4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.875em;
+	text-transform: none;
+	font-weight: bold;
+	color: #CCC;
+	margin-left: 45px;
+	margin-top: 3px;
+}
+
+#bold{
+	font-weight: bold;
+}
+
+#azul{
+	font-weight: bold;
+	color:#009;
+}
+
+#verde{
+	font-weight: bold;
+	color:#063;
+}
+#vermelho{
+	font-weight: bold;
+	color:#900;
+}
+
+#verde{
+	font-weight: bold;
+	color:#063;
+}
+#laranja{
+	font-weight: bold;
+	color:#F60;
+}
+
+
+
+ol{ 
+ } 
+ 
+.li_a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.000em;
+	line-height: 140%;
+	text-align: justify;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+#fonte{
+	font-size:1.125em;
+}
+
+
+.cinza {
+	background-color: #e6e7e8!important;
+}
+.amareloclaro {
+	background-color: #ebe8d8!important;
+}
+.azulescuro {
+	border-color: #3e4095;
+}
+.lilas {
+	border-color: #a9518b;
+}
+.box1003 {
+	width: 95%;
+	position: relative;
+	clear: both;
+	border-radius: 15px;
+	padding: 15px;
+	margin-bottom: 5px;
+	background-color: #eceded;
+	border-style: solid;
+	border-width: medium;
+}
+.box1002 {
+	width: 98%;
+	height:180px;
+	position: relative;
+	clear: both;
+	border-radius: 15px;
+	padding: 15px;
+	margin-bottom: 5px;
+}
+
+.box1004 {
+	width: 98%;
+	height:10%;
+	position: relative;
+	clear: both;
+	border-radius: 15px;
+	padding: 15px;
+	margin-bottom: 5px;
+}
+img.displayed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+.romanos {
+	list-style-type: upper-roman;
+}
+.alfabeto {
+	list-style-type: lower-alpha;
+}
+.ALFA {
+	list-style-type: upper-alpha;
+}

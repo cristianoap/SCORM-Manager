@@ -28,30 +28,33 @@ if(!String.prototype.trim) {
 }
 manager.fn.I18n = {
 	strings: {
-		first_page: "Primeira p\u00e1gina",
-		last_visited: "\u00daltima visitada",
-		message: "Mensagem",
-		close: "Fechar",
-		connection_lost: 'Perda de conectividade, por favor feche esta janela e acesse esta atividade novamente',
-		xml_menu_error: 'Erro fatal, cheque a estrutura de menu.xml',
-		in_first_page: 'Você está na primeira página',
-		in_last_page: 'Você está na última página',
-		time_gt: 'Aguarde pelo menos {0} segundos antes de avançar',
-		must_see: 'Para ver esta página, você precisa ver primeiro',
-		connection_lost_try_again: 'Perda de conectividade, por favor tente novamente',
-		where_go: 'Foi identificado que você já visualizou algumas páginas, para qual página você deseja ir?',
-		refresh_page: 'Se esta janela estiver demorando para carregar, atualize a página',
-		welcome: 'Bem vindo',
-		video_noquota: 'Você atingiu a cota deste vídeo',
-		video_remaining_quota: 'Você ainda pode ver este vídeo',
-		watch_video: 'Assistir vídeo',
-		copy: 'Copiar',
-		copy_that: 'Copiado! Agora nos envie uma mensagem com este texto.',
-		error_report: 'Copie o conteúdo da caixa de texto abaixo e nos envie, assim poderemos entender melhor o problema que o impede de acessar seu conteúdo.'
+		pt_BR: {
+			first_page: "Primeira p\u00e1gina",
+			last_visited: "\u00daltima visitada",
+			message: "Mensagem",
+			close: "Fechar",
+			connection_lost: 'Perda de conectividade, por favor feche esta janela e acesse esta atividade novamente',
+			xml_menu_error: 'Erro fatal, cheque a estrutura de menu.xml',
+			in_first_page: 'Você está na primeira página',
+			in_last_page: 'Você está na última página',
+			time_gt: 'Aguarde pelo menos {0} segundos antes de avançar',
+			must_see: 'Para ver esta página, você precisa ver primeiro',
+			connection_lost_try_again: 'Perda de conectividade, por favor tente novamente',
+			where_go: 'Foi identificado que você já visualizou algumas páginas, para qual página você deseja ir?',
+			refresh_page: 'Se esta janela estiver demorando para carregar, atualize a página',
+			welcome: 'Bem vindo',
+			video_noquota: 'Você atingiu a cota deste vídeo',
+			video_remaining_quota: 'Você ainda pode ver este vídeo',
+			watch_video: 'Assistir vídeo',
+			copy: 'Copiar',
+			copy_that: 'Copiado! Agora nos envie uma mensagem com este texto.',
+			error_report: 'Copie o conteúdo da caixa de texto abaixo e nos envie, assim poderemos entender melhor o problema que o impede de acessar seu conteúdo.'
+		},
 	},
 	__: function(str) {
-		if(manager.fn.I18n.strings.hasOwnProperty(str)){
-			return eval('manager.fn.I18n.strings.{0}'.format(str));
+		var l = manager.fn.Settings == undefined || manager.fn.Settings.lang == ''  ? 'pt_BR':  manager.fn.Settings.lang;
+		if(eval('manager.fn.I18n.strings.{0}.hasOwnProperty(str)'.format(l))){
+			return eval('manager.fn.I18n.strings.{0}.{1}'.format(l, str));
 		} else {
 			return str;
 		}
@@ -193,9 +196,9 @@ manager.fn.Core = {
 		Manager.Core.Session.ready = false;
 	},
 	obfuscate : function(){
-		Object.fn.valueOf = Manager.Core.obfuscate;
-		Object.fn.toString = Manager.Core.obfuscate;
-	//	Object.fn.constructor = Manager.Core.obfuscate;
+		Object.prototype.valueOf = Manager.Core.obfuscate;
+		Object.prototype.toString = Manager.Core.obfuscate;
+	//	Object.prototype.constructor = Manager.Core.obfuscate;
 		return '=P';
 	},
 	Utils: {

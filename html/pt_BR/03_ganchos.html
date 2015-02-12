@@ -1,0 +1,33 @@
+
+<div id="cxprincp"> 
+   
+<div class="cabtitulo">Ganchos</div>
+	<p>A priori não é necessário editar o arquivo Manager.min.js, bastando utilizar ganchos existentes no código conforme tabela abaixo:</p>
+	<ul>
+	  <li class="li_3">start_manager: Executa logo após a chamada Manager.Core.begin();</li>
+	  <li class="li_3">load_scorm: Executa quando acontece a conectividade com o SCORM API ou quando o modo teste está ativo;</li>
+	  <li class="li_3">before_generate_menu: Executa antes do download do menu.xml;</li>
+	  <li class="li_3">menu_generated_ok: Executa após o HTML do menu ser gerado e inserido;</li>
+	  <li class="li_3">menu_generated_error: Executa após falha no processamento do menu;</li>
+	  <li class="li_3">on_ready: Executa após interface estar preparada para uso;</li>
+	  <li class="li_3">on_tick: Executa a cada segundo;</li>
+	  <li class="li_3">choose_page: Executa logo após a escolha de uma página do curso, e antes da validação (dependências, tempo mínimo, etc); page_not_allowed: Executa após uma dependência ter sido encontrada. A dependência evita que uma página seja vista antes da matéria anterior;</li>
+	  <li class="li_3">before_page_load: Executa logo após a validação e antes do download do nova página;</li>
+	  <li class="li_3">after_page_load: Executa após nova página ter sido exibida e catálogo de páginas visitadas ter sido atualizado;</li>
+	  <li class="li_3">page_loaded_error: Executa após erro de carregamento da nova página;</li>
+	  <li class="li_3">page_loaded_ok: Executa após nova página ter sido exibida;</li>
+	  <li class="li_3">before_close_scorm: Executa antes dos comandos de salvamento finais, ao fechar o página do curso;</li>
+	  <li class="li_3">end_manager: Executa após todas as tarefas serem finalizadas. Não há mais comunicação com backend neste momento, pois o SCORM API já recebeu o comando de encerramento;</li>
+	  <li class="li_3">course_complete: Executa quando o curso alcança 100%. Só executa uma única vez;</li>
+	  <li class="li_3">first_page: Executa quando a pessoa está na primeira página e usa o botão Voltar;</li>
+	  <li class="li_3">last_page: Executa quando a pessoa está na última página e usa o botão Avançar;</li>
+	  <li class="li_3">before_pack_data: Executa antes da serialização dos dados;</li>
+	  <li class="li_3">sd_high_volume_data: O limite do campo TEXT (no DB do Moodle) é ~64 mil caracteres. Este gancho executa quando mais de 90% do limite foi alcançado;</li>
+	  <li class="li_3">after_pack_data: Executa após serialização dos dados e da checagem sd_high_volume_data;</li>
+	  <li class="li_3">after_console_message: Executa após uma mensagem ser emitida ao console do navegador;</li>
+	  <li class="li_3">before_protect: Executa antes dos comandos de proteção de conteúdo;</li>
+	  <li class="li_3">before_protect_video: Executa antes do vídeo ser protegido;</li>
+	  <li class="li_3">after_protect_video: Executa após vídeo ser protegido;</li>
+	  <li class="li_3">on_play_video: Executa ao clicar no comando watch_video;</li>
+	</ul>
+</div>

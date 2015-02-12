@@ -1,0 +1,37 @@
+
+<div id="cxprincp"> 
+   
+<div class="cabtitulo">Settings</div>
+
+<p>Below you will find the configuration parameters that can be used before the Manager.Core.begin () command:
+<pre>
+Settings = {
+      debug: 'error',
+      min_time_per_page: 0,
+      resume_prompt: true,
+      protect_images: true,
+      limit_video_access: true,
+      pages_dir: 'html/',
+      lang: '',
+      straight: true,
+      score_by_progress: false,
+      score_max: 100,
+      score_min: 0,
+}
+</pre>
+	<ul>
+	  <li class="li_3">debug: Set the display of debug information in the browser console. The values are none, error, log, all.</li>
+	  <li class="li_3">min_time_per_page: Prevent the advance before the minimum time is reached. If the page has already been seen before is setting is not applied.</li>
+	  <li class="li_3">resume_prompt: If set to TRUE, allows the student to access the lesson choose whether to start where you left off or go to the first screen of course.</li>
+	  <li class="li_3">protect_images: Allows block right click and drag commands.</li>
+	  <li class="li_3">limit_video_access: Prevent viewing videos after X views (views during the same session are ignored). The counting of the videos is individual, and the count is incremented after confirmation of the student.</li>
+	  <li class="li_3">pages_dir: Folder containing html files for each menu item.</li>
+	  <li class="li_3">lang: Allows internationalize the course. A folder within the html folder should be created with the language selected in this configuration (eg html/en_US/introduction.html). The file containing the course of the menu should be appointed as the menu_pt_BR.xml Convention.</li>
+	  <li class="li_3">straight: If set to TRUE, prevents the student to jump course pages.</li>
+	  <li class="li_3">score_by_progress: Allows scoring the student based on the percentage of progress even in the course. If other scoring metrics are used, this option can remain FALSE. The value of the student's score should be between the score_min and score_max.</li>
+	  <li class="li_3">score_max: Maximum possible score for this course.</li>
+	  <li class="li_3">score_min: minimum possible score for this course.</li>
+	</ul>
+</p>
+
+</div>

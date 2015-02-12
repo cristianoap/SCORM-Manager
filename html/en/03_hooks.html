@@ -1,0 +1,36 @@
+
+<div id="cxprincp"> 
+   
+<div class="cabtitulo">Hooks</div>
+	<div class="corpo_tx">
+		<p>In principle it is not necessary to edit the Manager.min.js file by simply using hooks in the code as shown below:</p>
+		<ul>
+		  <li class="li_3">start_manager: Runs after the call Manager.Core.begin();</li>
+		  <li class="li_3">load_scorm: Run to start the connectivity with the SCORM API or when the test mode is active;</li>
+		  <li class="li_3">before_generate_menu: Runs before downloading the menu.xml;</li>
+		  <li class="li_3">menu_generated_ok: Runs after the HTML menu is generated and inserted;</li>
+		  <li class="li_3">menu_generated_error: Runs after failure in processing the menu;</li>
+		  <li class="li_3">on_ready: Runs after interface be ready for use;</li>
+		  <li class="li_3">on_tick: Runs every second;</li>
+		  <li class="li_3">choose_page: Runs after choosing a page of the course, and before validation (dependencies, minimum time, etc.); page_not_allowed: Executes after a dependence have been found. The dependence prevents a page is seen before the previous field;</li>
+		  <li class="li_3">before_page_load: Runs after validation and before downloading the new page;</li>
+		  <li class="li_3">after_page_load: Runs after new page has been displayed and visited pages catalog have been updated;</li>
+		  <li class="li_3">page_loaded_error: Runs after the new page load error;</li>
+		  <li class="li_3">page_loaded_ok: Runs after new page has been displayed;</li>
+		  <li class="li_3">before_close_scorm: Runs before the final save commands, to close the page of the course;</li>
+		  <li class="li_3">end_manager: Runs after all tasks are completed. No more communication with backend at this point because the SCORM API has received the shutdown command;</li>
+		  <li class="li_3">course_complete: Runs when the course reaches 100%. Only run once;</li>
+		  <li class="li_3">first_page: Runs when the person is the first page and use the back button;</li>
+		  <li class="li_3">last_page: Runs when the person is on the last page and use the Next button;</li>
+		  <li class="li_3">before_pack_data: Runs before the serialization of data;</li>
+		  <li class="li_3">sd_high_volume_data: TEXT field limit (in Moodle DB) is ~ 64 thousand characters. This hook runs when more than 90% of the limit has been reached;</li>
+		  <li class="li_3">after_pack_data: Runs after serialization of data and sd_high_volume_data check;</li>
+		  <li class="li_3">after_console_message: Executes after a message is sent to the browser console;</li>
+		  <li class="li_3">before_protect: Runs before the content protection controls;</li>
+		  <li class="li_3">before_protect_video: Runs before the video is protected;</li>
+		  <li class="li_3">after_protect_video: Runs after video be protected;</li>
+		  <li class="li_3">on_play_video: Run by clicking the watch_video command;</li>
+		</ul>
+	</div>
+
+</div>

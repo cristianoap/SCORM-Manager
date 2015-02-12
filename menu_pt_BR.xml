@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grupos>
+	<grupo titulo="SCORM Manager" icone="house">
+	    <item titulo="Introdução" arquivo="01_introducao" ></item>
+	    <item titulo="Configurações" arquivo="02_configuracoes" ></item>
+	    <item titulo="Ganchos" arquivo="03_ganchos" ></item>
+	</grupo>
+</grupos>

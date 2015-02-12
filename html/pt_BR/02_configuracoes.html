@@ -1,0 +1,37 @@
+
+<div id="cxprincp"> 
+   
+<div class="cabtitulo">Configurações</div>
+
+<p>
+Abaixo deixo listado os parâmetros de configuração que podem ser utilizados antes do comando Manager.Core.begin():
+<pre>
+Settings = {
+      debug: 'error',
+      min_time_per_page: 0,
+      resume_prompt: true,
+      protect_images: true,
+      limit_video_access: true,
+      pages_dir: 'html/',
+      lang: '',
+      straight: true,
+      score_by_progress: false,
+      score_max: 100,
+      score_min: 0,
+}
+</pre>
+	<ul>
+	  <li class="li_3">debug: Configura a exibição de informações de debug no console do navegador. Os valores são none, error, log, all.</li>
+	  <li class="li_3">min_time_per_page: Permite impedir o avanço antes que o tempo mínimo seja atingido. Caso a página já tenha sido visto antes está configuração não será aplicada.</li>
+	  <li class="li_3">resume_prompt: Caso configurado como TRUE, permite que o aluno ao acessar a aula escolha se deseja começar onde parou ou ir a primeira tela do curso.</li>
+	  <li class="li_3">protect_images: Permite bloquear o clique direito e comandos de arrastar.</li>
+	  <li class="li_3">limit_video_access: Permite impedir a visualização de vídeos após X visualizações (visualizações durante a mesma sessão são ignoradas). A contagem dos vídeos é individual, e a contagem será incrementada após confirmação do aluno.</li>
+	  <li class="li_3">pages_dir: Pasta contendo arquivos html de cada item no menu.</li>
+	  <li class="li_3">lang: Permite internacionalizar o curso. Uma pasta dentro da pasta html deverá ser criada com o idioma selecionado nesta configuração (por exemplo html/pt_BR/aula1.html). O arquivo contendo o menu do curso deverá ser nomeado conforme a convenção menu_pt_BR.xml.</li>
+	  <li class="li_3">straight: Caso configurado como TRUE, impede o aluno de pular páginas do curso.</li>
+	  <li class="li_3">score_by_progress: Permite pontuar o aluno com base na porcentagem de progresso do mesmo pelo curso. Caso sejam utilizadas outras métricas de pontuação, esta opção pode permanecer como FALSE. O valor da pontuação do aluno estará dentro dos limites score_min e score_max.</li>
+	  <li class="li_3">score_max: Pontuação máxima possível para este curso.</li>
+	  <li class="li_3">score_min: Pontuação mínima possível para este curso.</li>
+	</ul>
+</p>
+</div>
